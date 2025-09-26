@@ -11,14 +11,16 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   border: 3px solid white;
   border-radius: 30px;
-  min-width: 750px;
+  min-width: 1200px;
   margin: 20px;
+  text-align: center;
 }
 
 #header-panel {
   display: flex;
   height: 100px;
   border-bottom: 3px solid white;
+  border-radius: 30px;
 }
 
 #logo-a {
@@ -30,7 +32,7 @@ body {
 #logo {
   border-radius: 50%;
   border: 3px solid white;
-  height: 80px;
+  height: 70px;
 }
 
 #logo:hover {
@@ -40,6 +42,7 @@ body {
 #links {
   font-size: 32px;
   margin: auto;
+  font-weight: bold;
 }
 
 #links > a {
@@ -47,7 +50,7 @@ body {
   color: white;
   margin: 10px;
   padding: 15px;
-  border-radius: 40px;
+  border-radius: 27px;
   border: 3px solid rgb(32, 32, 32);
 }
 
@@ -61,9 +64,8 @@ body {
 }
 
 #intro-panel {
-  height: 1000px;
-  flex-basis: 25%;
-  border-right: 3px solid white;
+  height: auto;
+  flex-basis: 30%;
   text-align: center;
 }
 
@@ -84,22 +86,175 @@ body {
   margin-bottom: 0px;
 }
 
-#intro-panel > h2 {
+#intro-panel > #occupation-label {
   margin-top: 3px;
   margin-bottom: 0px;
   color: peru;
 }
 
-#intro-panel > p {
+#summary-box {
   font-size: 18px;
   margin-top: 30px;
   margin-left: 20px;
-  margin-right: 20px;
+  margin-right: 10px;
   border: 2px solid peru;
-  padding: 10px;
+  padding: 12px;
   border-radius: 20px;
 }
 
+#summary-box > h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#summary-box > p {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+#skills-box {
+  border: 2px solid peru;
+  margin: 20px;
+  margin-right: 10px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+#skills-box > h2 {
+  margin-top: 3px;
+  margin-bottom: 0px;
+}
+
+#skills-box > ul {
+  text-align: left;
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  margin-right: 5px;
+  list-style-type: circle;
+}
+
 #main-panel {
-  flex-basis: 75%;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 70%;
+}
+
+#career {
+  flex-basis: 33%;
+  border: 2px solid peru;
+  margin: 20px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+#career > h1 {
+  margin-top: 5px;
+}
+
+#career-deets {
+  display: flex;
+  margin: 20px;
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+.career-col {
+  display: flex;
+  flex-direction: column;
+  border-right: 2px solid white;
+  padding: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.career-col > div > h2 {
+  margin-top: -15px;
+  margin-bottom: 0px;
+  color: peru;
+}
+
+.career-col > div > p {
+  margin-bottom: -15px;
+  font-size: 18px;
+}
+
+#qualifications {
+  flex-basis: 33%;
+  border: 2px solid peru;
+  margin: 10px;
+  margin-right: 20px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+#qualifications > h1 {
+  margin-top: 5px;
+}
+
+#qualifications > h2 {
+  color: peru;
+  margin-bottom: 3px;
+  margin-top: 30px;
+}
+
+#education-deets {
+  display: flex;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+#education-deets > p {
+  border-right: 2px solid white;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 18px;
+}
+
+#qualifications-deets {
+  display: flex;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+#qualifications-deets > p {
+  border-right: 2px solid white;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 18px;
+}
+
+#hobbies {
+  flex-basis: 33%;
+  border: 2px solid peru;
+  margin: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+#hobbies > h1 {
+  margin-top: 5px;
+}
+
+#hobbies-deets {
+  display: flex;
+  text-align: left;
+  font-size: 18px;
+}
+
+#hobbies-deets > ol {
+  flex-basis: 55%;
+  margin-left: 100px;
+}
+
+#mead-line {
+  color: peru;
+}
+
+#mead {
+  margin-top: -20px;
 }
